@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+import logging as log
+import xml.etree.ElementTree as etree
+import luna.net as net
+import luna.core as core
+import luna.xmlx as xmlx
+log.getLogger().setLevel(log.DEBUG)
+
+
+#core.savetext("page.html", net.get("http://www.w3c.org"))
+
+
+node = xmlx.load("page.html")
+map(lambda n: log.debug("%s: %s", n._tag,n.attrib["id"]),
+    xmlx.traverse(node, xmlx.get_select_attribute("id")))
+
