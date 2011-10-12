@@ -1,5 +1,6 @@
 linux/
 luna/
+luna
 .komodotools/
 *.komodoproject
 *.pyc
