@@ -15,7 +15,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ABOUT
 
-Compiles the current linux kernel into ubuntu packages.
+XML templating engine.
 
 Build Method from:
 https://wiki.ubuntu.com/KernelTeam/GitKernelBuild
